@@ -1,0 +1,38 @@
+{
+  "name": "<%= slugname %>",
+  "version": "0.0.0",
+  "main": "<%= slugname %>.js",
+  "description": "<%= props.description %>",<% if (props.homepage) { %>
+  "homepage": "<%= props.homepage %>",<%}%>
+  "bugs": "<%= repoUrl %>/issues",
+  "author": {
+    "name": "<%= props.authorName %>",
+    "email": "<%= props.authorEmail %>"<% if (props.authorUrl) { %>,
+    "url": "<%= props.authorUrl %>"<% } %>
+  },
+  "repository": {
+    "type": "git",
+    "url": "<%= repoUrl %>"
+  },
+  "licenses": [
+    {
+      "type": "<%= props.license %>"
+    }
+  ],
+  "files": [
+    ""
+  ],
+  "keywords":[
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.3.3",
+    "grunt-contrib-watch": "~0.6.1",
+    "load-grunt-tasks": "~0.4.0",
+    "time-grunt": "~0.3.1",
+    "jshint-stylish": "~0.1.5"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}

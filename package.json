@@ -1,0 +1,50 @@
+{
+  "name": "generator-easy-node",
+  "version": "0.0.0-building",
+  "description": "A easy node generator for Yeoman",
+  "keywords": [
+    "yeoman-generator",
+    "scaffold",
+    "node",
+    "easy-node",
+    "node"
+  ],
+  "homepage": "https://github.com/easy-node/generator-easy-node",
+  "bugs": "https://github.com/easy-node/generator-easy-node/issues",
+  "author": {
+    "name": "Huei",
+    "email": "huei90@gmail.com",
+    "url": "https://github.com/huei90"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/easy-node/generator-easy-node.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "chalk": "~0.4.0",
+    "npm-name": "~0.1.0",
+    "yeoman-generator": "~0.16.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.3"
+  },
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "files": [
+    "app"
+  ],
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
