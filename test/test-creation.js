@@ -4,14 +4,14 @@
 var path = require('path');
 var helpers = require('yeoman-generator').test;
 
-describe('node generator', function () {
+describe('easy node generator', function () {
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
       if (err) {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('node:app', [
+      this.app = helpers.createGenerator('easy-node:app', [
         '../../app'
       ]);
       this.app.options['skip-install'] = true;
