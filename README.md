@@ -11,6 +11,7 @@ This is original from [generator-node](https://github.com/yeoman/generator-node/
 1. Move `/test/` folder to root folder.
 2. Move `/lib/` folder to root folder.
 3. Add bower.json
+4. Add component.json
 
 [Yeoman]: http://yeoman.io/
 

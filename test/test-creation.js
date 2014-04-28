@@ -29,6 +29,7 @@ describe('node generator', function () {
       'Gruntfile.js',
       ['package.json', /"name": "mymodule"/],
       'bower.json',
+      'component.json',
       'README.md',
     ];
 

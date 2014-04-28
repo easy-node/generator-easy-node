@@ -111,4 +111,5 @@ NodeGenerator.prototype.projectfiles = function projectfiles() {
   this.template('Gruntfile.js');
   this.template('_package.json', 'package.json');
   this.template('_bower.json', 'bower.json');
+  this.template('_component.json', 'component.json');
 };

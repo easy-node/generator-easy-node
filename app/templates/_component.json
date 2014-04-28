@@ -1,0 +1,16 @@
+{
+  "name": "<%= slugname %>",
+  "repo": "<%= props.homepage %>",
+  "description": "<%= props.description %>",
+  "version": "0.0.0",
+  "keywords": [
+  ],
+  "dependencies": {
+  },
+  "development": {
+  },
+  "scripts": [
+      "<%= slugname %>.js"
+  ],
+  "license": "<%= props.license %>"
+}
