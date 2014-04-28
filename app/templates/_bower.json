@@ -1,0 +1,19 @@
+{
+  "name": "<%= slugname %>",
+  "version": "0.0.0",<% if (props.homepage) { %>
+  "homepage": "<%= props.homepage %>",<%}%>
+  "authors": [
+    "<%= props.authorName %>"
+  ],
+  "description": "<%= props.description %>",
+  "main": "<%= slugname %>.js",
+  "keywords": [
+  ],
+  "license": "<%= props.license %>",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

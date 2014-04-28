@@ -28,6 +28,7 @@ describe('node generator', function () {
       '.travis.yml',
       'Gruntfile.js',
       ['package.json', /"name": "mymodule"/],
+      'bower.json',
       'README.md',
     ];
 

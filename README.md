@@ -10,6 +10,7 @@ This is original from [generator-node](https://github.com/yeoman/generator-node/
 
 1. Move `/test/` folder to root folder.
 2. Move `/lib/` folder to root folder.
+3. Add bower.json
 
 [Yeoman]: http://yeoman.io/
 
@@ -24,7 +25,7 @@ Install the generator by running: `npm install -g generator-easy-node`.
 At the command-line, cd into an empty directory, run this command and follow the prompts.
 
 ```
-yo node
+yo easy-node
 ```
 
 _Note that this template will generate files in the current directory, so be sure to change to a new directory first if you don't want to overwrite existing files._
