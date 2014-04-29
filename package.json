@@ -1,13 +1,14 @@
 {
   "name": "generator-easy-node",
-  "version": "0.1.0-stable",
+  "version": "0.1.1",
   "description": "A easy node generator for Yeoman",
   "keywords": [
     "yeoman-generator",
     "scaffold",
     "node",
     "easy-node",
-    "node"
+    "generator-node",
+    "generator-easy-node"
   ],
   "homepage": "https://github.com/easy-node/generator-easy-node",
   "bugs": "https://github.com/easy-node/generator-easy-node/issues",

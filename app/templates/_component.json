@@ -4,6 +4,7 @@
   "description": "<%= props.description %>",
   "version": "0.0.0",
   "keywords": [
+    "<%= slugname %>"
   ],
   "dependencies": {
   },

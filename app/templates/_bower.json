@@ -8,6 +8,7 @@
   "description": "<%= props.description %>",
   "main": "<%= slugname %>.js",
   "keywords": [
+    "<%= slugname %>"
   ],
   "license": "<%= props.license %>",
   "ignore": [
