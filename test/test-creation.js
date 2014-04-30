@@ -2,6 +2,7 @@
 'use strict';
 
 var path = require('path');
+var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 
 describe('easy node generator', function () {
@@ -27,10 +28,10 @@ describe('easy node generator', function () {
       '.jshintrc',
       '.travis.yml',
       'Gruntfile.js',
-      ['package.json', /"name": "mymodule"/],
+      'package.json',
       'bower.json',
       'component.json',
-      'README.md',
+      'README.md'
     ];
 
     helpers.mockPrompt(this.app, {
@@ -43,7 +44,8 @@ describe('easy node generator', function () {
     });
 
     this.app.run({}, function () {
-      helpers.assertFiles(expected);
+      assert.file(expected);
+      assert.fileContent('package.json', /"name": "mymodule"/);
       done();
     });
   });
