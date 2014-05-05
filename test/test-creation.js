@@ -31,6 +31,7 @@ describe('easy node generator', function () {
       'package.json',
       'bower.json',
       'component.json',
+      'cli.js',
       'README.md'
     ];
 
@@ -40,7 +41,8 @@ describe('easy node generator', function () {
       'license': 'MIT',
       'githubUsername': 'octocat',
       'authorName': 'Octo Cat',
-      'authorEmail': 'octo@example.com'
+      'authorEmail': 'octo@example.com',
+      'cli': "yes"
     });
 
     this.app.run({}, function () {

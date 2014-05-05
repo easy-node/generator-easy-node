@@ -57,6 +57,10 @@ var NodeGenerator = module.exports = yeoman.generators.Base.extend({
         }, {
             name: 'authorUrl',
             message: 'Author\'s Homepage'
+        }, {
+            name: 'cli',
+            message: 'Do you need cli tools?',
+            default: 'yes'
         }];
 
         this.currentYear = (new Date()).getFullYear();
@@ -100,6 +104,9 @@ var NodeGenerator = module.exports = yeoman.generators.Base.extend({
     writing: function () {
         this.template('name.js', this.slugname + '.js');
         this.template('name_test.js', this.slugname + '_test.js');
+        if (this.props.cli === 'yes' || this.props.cli === true) {
+          this.template('cli.js', 'cli.js');
+        }
     },
 
     install: function () {

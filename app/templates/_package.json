@@ -1,26 +1,36 @@
 {
   "name": "<%= slugname %>",
   "version": "0.0.0",
-  "main": "<%= slugname %>.js",
   "description": "<%= props.description %>",<% if (props.homepage) { %>
+  "main": "<%= slugname %>.js",<% if (props.cli === "yes" || props.cli === true) { %>
+  "bin": {
+    "<%= slugname %>": "cli.js"
+  },<%}%>
   "homepage": "<%= props.homepage %>",<%}%>
   "bugs": "<%= repoUrl %>/issues",
+  "repository": {
+    "type": "git",
+    "url": "<%= repoUrl %>"
+  },
   "author": {
     "name": "<%= props.authorName %>",
     "email": "<%= props.authorEmail %>"<% if (props.authorUrl) { %>,
     "url": "<%= props.authorUrl %>"<% } %>
   },
-  "repository": {
-    "type": "git",
-    "url": "<%= repoUrl %>"
+  "scripts": {
+    "test": "grunt"
   },
-  "licenses": "<%= props.license %>",
+  "license": "<%= props.license %>",<% if (props.cli === "yes" || props.cli === true) { %>
+  "preferGlobal": "true",<% } %>
   "files": [
     ""
   ],
   "keywords":[
     "<%= slugname %>"
   ],
+  "dependencies": {<% if (props.cli === "yes" || props.cli === true) { %>
+    "multiline": "~0.3.4"<% } %>
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-nodeunit": "^0.3.3",
@@ -28,8 +38,5 @@
     "load-grunt-tasks": "^0.4.0",
     "time-grunt": "^0.3.1",
     "jshint-stylish": "^0.2.0"
-  },
-  "scripts": {
-    "test": "grunt"
   }
 }

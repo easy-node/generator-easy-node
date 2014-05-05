@@ -13,6 +13,7 @@ This is original from [generator-node](https://github.com/yeoman/generator-node/
 3. Add bower.json
 4. Add component.json
 5. Add default keywords
+6. Add cli.js
 
 [Yeoman]: http://yeoman.io/
 
