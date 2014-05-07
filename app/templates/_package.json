@@ -22,9 +22,6 @@
   },
   "license": "<%= props.license %>",<% if (props.cli === "yes" || props.cli === true) { %>
   "preferGlobal": "true",<% } %>
-  "files": [
-    ""
-  ],
   "keywords":[
     "<%= slugname %>"
   ],
