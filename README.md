@@ -2,7 +2,7 @@
 
 > Create a node.js module with [Yeoman][], including nodeunit unit tests.
 
-This generator is based of
+This generator is based on
 [generator-node](https://github.com/yeoman/generator-node/), authored by the
 yeoman team.
 
