@@ -58,6 +58,9 @@ var NodeGenerator = module.exports = yeoman.generators.Base.extend({
             name: 'authorUrl',
             message: 'Author\'s Homepage'
         }, {
+            name: 'keywords',
+            message: 'Key your keywords (comma to split)'
+        }, {
             name: 'cli',
             message: 'Do you need cli tools?',
             default: 'yes'
@@ -72,7 +75,9 @@ var NodeGenerator = module.exports = yeoman.generators.Base.extend({
                 function (g) { return g[1].toUpperCase(); }
             );
 
-            if(props.githubUsername){
+            this.keywords = props.keywords.split(',');
+
+            if (props.githubUsername){
                 this.repoUrl = 'https://github.com/' + props.githubUsername + '/' + this.slugname;
             } else {
                 this.repoUrl = 'user/repo';

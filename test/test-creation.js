@@ -42,7 +42,8 @@ describe('easy node generator', function () {
       'githubUsername': 'octocat',
       'authorName': 'Octo Cat',
       'authorEmail': 'octo@example.com',
-      'cli': "yes"
+      'cli': "yes",
+      'keywords': 'keyword1,keyword2,keyword3'
     });
 
     this.app.run({}, function () {

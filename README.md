@@ -12,7 +12,7 @@ This is original from [generator-node](https://github.com/yeoman/generator-node/
 2. Move `/lib/` folder to root folder.
 3. Add bower.json
 4. Add component.json
-5. Add default keywords
+5. Add default keywords and ask for the keywords needed
 6. Add cli.js
 
 [Yeoman]: http://yeoman.io/

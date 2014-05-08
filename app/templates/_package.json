@@ -23,7 +23,8 @@
   "license": "<%= props.license %>",<% if (props.cli === "yes" || props.cli === true) { %>
   "preferGlobal": "true",<% } %>
   "keywords":[
-    "<%= slugname %>"
+    "<%= slugname %>"<% for (var i=0;i<keywords.length;i++) { %>,
+    "<%= keywords[i] %>"<% } %>
   ],
   "dependencies": {<% if (props.cli === "yes" || props.cli === true) { %>
     "multiline": "~0.3.4"<% } %>

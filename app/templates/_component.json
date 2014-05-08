@@ -4,7 +4,8 @@
   "description": "<%= props.description %>",
   "version": "0.0.0",
   "keywords": [
-    "<%= slugname %>"
+    "<%= slugname %>"<% for (var i=0;i<keywords.length;i++) { %>,
+    "<%= keywords[i] %>"<% } %>
   ],
   "dependencies": {
   },
