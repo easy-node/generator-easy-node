@@ -2,6 +2,7 @@
 
 'use strict';
 
+var multiline = require('multiline');
 var <%= safeSlugname %> = require('./<%= slugname %>');
 
 var userArgs = process.argv;
