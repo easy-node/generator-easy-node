@@ -109,7 +109,7 @@ var NodeGenerator = module.exports = yeoman.generators.Base.extend({
     writing: function () {
         this.template('name.js', this.slugname + '.js');
         this.template('name_test.js', this.slugname + '_test.js');
-        if (this.props.cli === 'yes' || this.props.cli === true) {
+        if (this.props.cli === 'yes' || this.props.cli) {
           this.template('cli.js', 'cli.js');
         }
     },

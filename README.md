@@ -13,7 +13,7 @@ This is original from [generator-node](https://github.com/yeoman/generator-node/
 3. Add bower.json
 4. Add component.json
 5. <s>Add default keywords and ask for the keywords needed</s> *(generator-node add this feature)*
-6. Add cli.js
+6. <s>Add cli.js</s> *(generator-node implement this)*
 7. Add .travis.yml test for node 0.11
 
 [Yeoman]: http://yeoman.io/

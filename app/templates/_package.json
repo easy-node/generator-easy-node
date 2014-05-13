@@ -2,7 +2,7 @@
   "name": "<%= slugname %>",
   "version": "0.0.0",
   "description": "<%= props.description %>",<% if (props.homepage) { %>
-  "main": "<%= slugname %>.js",<% if (props.cli === "yes" || props.cli === true) { %>
+  "main": "<%= slugname %>.js",<% if (props.cli === "yes" || props.cli) { %>
   "bin": {
     "<%= slugname %>": "cli.js"
   },<%}%>
@@ -26,7 +26,7 @@
     "<%= slugname %>"<% for (var i=0;i<keywords.length;i++) { %>,
     "<%= keywords[i] %>"<% } %>
   ],
-  "dependencies": {<% if (props.cli === "yes" || props.cli === true) { %>
+  "dependencies": {<% if (props.cli === "yes" || props.cli) { %>
     "multiline": "~0.3.4"<% } %>
   },
   "devDependencies": {
