@@ -15,6 +15,7 @@ This is original from [generator-node](https://github.com/yeoman/generator-node/
 5. <s>Add default keywords and ask for the keywords needed</s> *(generator-node add this feature)*
 6. <s>Add cli.js</s> *(generator-node implement this)*
 7. Add .travis.yml test for node 0.11
+8. Not yet implement this *(Add an examples dir, with basic example template.)*
 
 [Yeoman]: http://yeoman.io/
 
