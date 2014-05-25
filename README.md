@@ -16,6 +16,7 @@ This is original from [generator-node](https://github.com/yeoman/generator-node/
 6. <s>Add cli.js</s> *(generator-node implement this)*
 7. Add .travis.yml test for node 0.11
 8. Not yet implement this *(Add an examples dir, with basic example template.)*
+9. Not yet implement this too *(Ask browser for user)*
 
 [Yeoman]: http://yeoman.io/
 
